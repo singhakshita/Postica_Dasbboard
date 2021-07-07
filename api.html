@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./api.css" />
+    <title>api</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__title">Comapany Information</div>
+    </header>
+    <div class="modal hidden">
+      <div class="header">
+        <div class="header__content">Create API User</div>
+        <div class="header__icon"></div>
+      </div>
+      <div class="form">
+        <div class="form__elem">
+          <label>Email Id</label>
+          <input type="email" />
+        </div>
+        <div class="form__elem">
+          <label>Password</label>
+          <input type="password" />
+        </div>
+        <div class="form__elem">
+          <label>Confirm Password</label>
+          <input type="password" />
+        </div>
+        <div class="button__panel">
+          <button class="button">Generate API Credentials</button>
+          <button class="button">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <main>
+      <h3>API User Details</h3>
+      <table>
+        <tr>
+          <th>S.No</th>
+          <th>Email Id</th>
+          <th>Password</th>
+          <th>Action</th>
+          <th>Activate/Deactivate</th>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+      </table>
+      <button class="button createApi">Create an API User</button>
+      <div class="help">
+        Please read the following documentation to understand API integration
+        for any assistance connact TechMihirNaik
+      </div>
+    </main>
+    <div class="help__btn">Help</div>
+  </body>
+  <script src="./api.js"></script>
+</html>
