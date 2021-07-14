@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.container {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 26rem);
+  grid-template-rows: 10rem 10rem 10rem 10rem 20rem 25rem 20rem;
+  grid-gap: 50px;
+}
+.container-header {
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+
+  padding: 50px 0;
+  box-shadow: 4px 4px 4px 4px rgba(95, 90, 90, 0.9);
+
+  grid-column: 1 / 4;
+  font-size: 50px;
+
+  font-weight: 900;
+  color: #6f508d;
+  text-align: center;
+}
+.card {
+  border-radius: 16px;
+  box-shadow: 2px 2px 2px 2px rgba(95, 90, 90, 0.9);
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.details {
+  border-radius: 16px;
+  box-shadow: 2px 2px 2px 2px rgba(95, 90, 90, 0.9);
+  background-color: #fff;
+  grid-column: 2 / span 2;
+}
+.box {
+  border-radius: 16px;
+  box-shadow: 2px 2px 2px 2px rgba(95, 90, 90, 0.9);
+  background-color: #fff;
+}
+.heightX {
+  border-radius: 16px;
+  box-shadow: 2px 2px 2px 2px rgba(95, 90, 90, 0.9);
+  background-color: #fff;
+}
+.widthX {
+  border-radius: 16px;
+  box-shadow: 2px 2px 2px 2px rgba(95, 90, 90, 0.9);
+  background-color: #fff;
+  grid-column: 1 / 4;
+}
+.card-icon {
+  height: 5rem;
+  width: 5rem;
+  padding: 1.8rem 2rem 2rem 2.2rem;
+  border-radius: 50%;
+  background-color: rgba(194, 191, 191, 0.5);
+  margin: 5px;
+}
+.card-details--header {
+  padding: 2px;
+  font-size: large;
+  font-weight: 900;
+}
+.card-details--span {
+  margin-top: 20px;
+  color: #8b8989;
+  font-size: small;
+}
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+.details-items {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.details-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+}
+.notFound {
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.notFound-img {
+  height: 150px;
+  width: 150px;
+  background: url("./assets/wifi.png") no-repeat center/contain;
+  margin-bottom: 30px;
+}
+ul {
+  margin: 20px;
+  list-style: disc;
+}
+.list-item {
+  margin: 10px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+li {
+  margin: 8px;
+}
+.widthX-items {
+  margin: 16px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.order {
+  background-color: #007fff;
+  color: #fff;
+}
+.revenue {
+  background-color: #17b169;
+  color: #fff;
+}
+.icon-order {
+  background: url(/assets/order.png) no-repeat center/contain;
+  background-size: contain;
+}
+.icon-revenue {
+  background: url(/assets/revenue.png) no-repeat center/contain;
+  background-size: contain;
+}
+.icon-shipment {
+  background: url(/assets/shipment.png) no-repeat center/contain;
+  background-size: contain;
+}
