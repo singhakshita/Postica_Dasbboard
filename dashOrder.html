@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dashOrder.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="nav-bar">
+        <ul class="nav-bar_items">
+          <li class="nav-bar_item">
+            <a href="./dashOverview.html">Over View</a>
+          </li>
+          <li class="nav-bar_item active">
+            <a href="./dashOrder.html">Orders</a>
+          </li>
+          <li class="nav-bar_item">
+            <a href="./dashShipment.html">Shipments</a>
+          </li>
+          <li class="nav-bar_item">
+            <a href="./dash-ndr.html">NDR Details</a>
+          </li>
+          <li class="nav-bar_item">
+            <a href="./dash-rto.html">RTO Details</a>
+          </li>
+          <li class="nav-bar_item">
+            <a href="./dash-courier.html">Courier</a>
+          </li>
+          <li class="nav-bar_item"><a href="./dash-delays.html">Delay</a></li>
+        </ul>
+        <div class="filter">
+          <input type="date" placeholder="date" />
+          <input type="text" placeholder="Zone" />
+          <input type="text" placeholder="Courier" />
+          <input type="text" placeholder="Shipment Method" />
+          <input type="text" placeholder="Payment Method" />
+        </div>
+      </header>
+      <div class="widthX">
+        <div class="widthX-items">
+          <div>Date</div>
+          <div>Total Order</div>
+          <div>Pickup Unscheduled</div>
+          <div>Pickup Scheduled</div>
+          <div>In-Transit</div>
+          <div>Delivered</div>
+          <div>Unelivered</div>
+          <div>RTO</div>
+          <div>Lost / Damaged</div>
+        </div>
+        <hr />
+        <div class="notFound">
+          <div class="notFound-img"></div>
+          <div class="notFound-content">No Shipment Detail found</div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="details-header">
+          <div class="details-header-main">Prepaid VS COD</div>
+          <div class="details-header-sub">Last 30 Days</div>
+        </div>
+        <div class="notFound">
+          <div class="notFound-img"></div>
+          <div class="notFound-content">No Shipment Detail found</div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="details-header">
+          <div class="details-header-main">Buyer Demographics</div>
+          <div class="details-header-sub">Last 30 Days</div>
+        </div>
+        <div class="notFound">
+          <div class="notFound-img"></div>
+          <div class="notFound-content">No Shipment Detail found</div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="details-header">
+          <div class="details-header-main">Most Popular order location</div>
+          <div class="details-header-sub">Last 30 Days</div>
+        </div>
+        <div class="notFound">
+          <div class="notFound-img"></div>
+          <div class="notFound-content">No Shipment Detail found</div>
+        </div>
+      </div>
+
+      <div class="twiceBox">
+        <div class="details-header">
+          <div class="details-header-main">Top 10 Customers</div>
+          <div class="details-header-sub">Last 30 Days</div>
+        </div>
+        <div class="widthX-items">
+          <div>Customer Name</div>
+          <div>Order Count</div>
+          <div>Revenue</div>
+        </div>
+        <hr />
+        <div class="notFound">
+          <div class="notFound-img"></div>
+          <div class="notFound-content">No Shipment Detail found</div>
+        </div>
+      </div>
+
+      <div class="twiceBox">
+        <div class="details-header">
+          <div class="details-header-main">Top 10 Products</div>
+          <div class="details-header-sub">Last 30 Days</div>
+        </div>
+        <div class="widthX-items">
+          <div>Product Name Name</div>
+          <div>Unit Sold</div>
+          <div>Revenue</div>
+        </div>
+        <hr />
+        <div class="notFound">
+          <div class="notFound-img"></div>
+          <div class="notFound-content">No Shipment Detail found</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
