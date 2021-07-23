@@ -31,7 +31,7 @@
           </select>
       </div>
       <div class="main__kyc-sugges">Complete the below mentioned KYC steps</div>
-      <div class="kyc__container kyc__photo">
+      <div class="kyc__container kyc__photo" data-id="4">
         <div class="kyc__header">
           <div class="header_content">
             <div class="photo__header__num circle">1</div>
@@ -40,7 +40,7 @@
           
           <div class="icon-dropDown dropDown1"></div>
         </div>
-        <div class="first-kyc">
+        <div class="first-kyc photo---kyc">
           <div class="photo__sugges">
             Please switch on the webCam by clicking the button below and uplaod
             the selfie Image
@@ -57,7 +57,7 @@
           <button class="button saveImg">Save Image</button>
         </div>
       </div>
-      <div class="kyc__container kyc__doc notactive">
+      <div class="kyc__container kyc__doc notactive" data-id="5">
         <div class="kyc__header">
           <div class="header_content">
             <div class="photo__header__num circle">2</div>
@@ -65,7 +65,7 @@
           </div>
           <div class="icon-dropDown dropDown2"></div>
         </div>
-        <div class="second-kyc hidden">
+        <div class="second-kyc doc--kyc hidden">
           <div class="photo__sugges">
             Please enter your Aadhaar number, and verify the OTP if your mobile
             number is registered with the aadhar
@@ -82,6 +82,121 @@
           </div>
         </div>
       </div>
+      
+      <div class="kyc__container kyc__reg kyc__company hidden" data-id="0">
+        <div class="kyc__header">
+          <div class="header_content">
+            <div class="photo__header__num circle">1</div>
+           <div class="photo__header__name">Company Registration Documents</div>
+          </div>
+          
+          <div class="icon-dropDown dropDown1"></div>
+        </div>
+        
+       <div class="kyc__reg-container">
+        <form method="POST">
+          <label for="reg ID">Enter The Registration ID</label>
+          <input type="text">
+        </form>
+        <div class="first-kyc">
+          <div class="photo__sugges">
+            Please upload the Company Registration Certificate
+          </div>
+          <div class="photo__box">
+            <div class="photo">
+              <div>Uplaod the document</div>
+              <button class="button">Upload</button>
+            </div>
+            <div class="photo">
+              <div class="icon"></div>
+            </div>
+          </div>
+          <button class="button saveImg">Save Image</button>
+        </div>
+       </div>
+      </div>
+
+      <div class="kyc__container kyc__Pan kyc__company hidden" data-id="1">
+        <div class="kyc__header">
+          <div class="header_content">
+            <div class="photo__header__num circle">2</div>
+           <div class="photo__header__name">PAN Identification</div>
+          </div>
+          
+          <div class="icon-dropDown dropDown1"></div>
+        </div>
+        <div class="kyc__Pan--container hidden">
+          <form method="POST">
+            <label for="reg ID">Enter The PAN Number</label>
+            <input type="text">
+          </form>
+          <div class="first-kyc">
+            <div class="photo__sugges">
+              Please uplaod your PAN CARD image and enter your valid PAN Number
+            </div>
+            <div class="photo__box">
+              <div class="photo">
+                <div>Upload PAN card Image</div>
+                <button class="button">Upload</button>
+              </div>
+              <div class="photo">
+                <div class="icon"></div>
+              </div>
+            </div>
+            <button class="button saveImg">Save Image</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="kyc__container kyc__logo kyc__company hidden" data-id="2">
+        <div class="kyc__header">
+          <div class="header_content">
+            <div class="photo__header__num circle">3</div>
+           <div class="photo__header__name">Website Logo</div>
+          </div>
+          
+          <div class="icon-dropDown dropDown1"></div>
+        </div>
+        <div class="kyc__logo--container hidden">
+          <div class="first-kyc">
+            <div class="photo__sugges">
+             Please uplad your website Logo
+            </div>
+            <div class="photo__box">
+              <div class="photo">
+                <div>Upload the logo in jpeg/jpg/png format</div>
+                <button class="button">Uplaod</button>
+              </div>
+              <div class="photo">
+                <div class="icon"></div>
+              </div>
+            </div>
+            <button class="button saveImg">Save Image</button>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="kyc__container kyc__gst kyc__company hidden" data-id="3">
+        <div class="kyc__header">
+          <div class="header_content">
+            <div class="photo__header__num circle">4</div>
+           <div class="photo__header__name">GST ID verification</div>
+          </div>
+          
+          <div class="icon-dropDown dropDown1"></div>
+        </div>
+        <div class="kyc__gst--container hidden">
+          <form method="POST">
+            <label for="gst-id">Enter The GST ID</label>
+            <input type="text">
+          </form>
+        </div>
+      </div>
+
+
+
     </main>
   </body>
   <script src="./kyc.js"></script>

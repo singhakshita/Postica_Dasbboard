@@ -9,6 +9,14 @@ const removeClass = (elem, className) => {
   }
 };
 
+const arrDropDown = [
+  ".kyc__reg-container",
+  ".kyc__Pan--container",
+  ".kyc__logo--container",
+  ".kyc__gst--container",
+  ".photo---kyc",
+  ".doc--kyc",
+];
 const dropdownPhoto = document.querySelector(".dropDown1");
 const photoKyc = document.querySelector(".first-kyc");
 const docKyc = document.querySelector(".second-kyc");
@@ -19,11 +27,20 @@ const individualBtn = document.querySelector(".main__kyc-btn1");
 const companyKyc = document.querySelector(".company_kyc");
 const kycContainers = document.querySelectorAll(".kyc__container");
 
-dropdownPhoto.addEventListener("click", () => {
-  photoKyc.classList.toggle("hidden");
-});
-dropdownDocument.addEventListener("click", () => {
-  docKyc.classList.toggle("hidden");
+const kycCompanyContainers = document.querySelectorAll(".kyc__company");
+
+const dropDownButtons = document.querySelectorAll(".icon-dropDown");
+
+dropDownButtons.forEach((elem) => {
+  elem.addEventListener("click", (event) => {
+    const id = event.target.closest(".kyc__container").dataset.id;
+
+    const className = arrDropDown[id];
+
+    const box = document.querySelector(className);
+
+    box.classList.toggle("hidden");
+  });
 });
 
 companyBtn.addEventListener("click", () => {
@@ -31,6 +48,7 @@ companyBtn.addEventListener("click", () => {
   kycContainers.forEach((elem) => {
     addClass(elem, "hidden");
   });
+
   removeClass(companyBtn, "notactive");
   addClass(companyBtn, "active");
   addClass(individualBtn, "notactive");
@@ -39,7 +57,7 @@ companyBtn.addEventListener("click", () => {
 const companyType = document.getElementById("company");
 companyType.addEventListener("change", () => {
   if (companyType.value !== "select") {
-    kycContainers.forEach((elem) => {
+    kycCompanyContainers.forEach((elem) => {
       removeClass(elem, "hidden");
     });
   } else {
@@ -53,6 +71,9 @@ individualBtn.addEventListener("click", () => {
   addClass(companyKyc, "hidden");
   kycContainers.forEach((elem) => {
     removeClass(elem, "hidden");
+  });
+  kycCompanyContainers.forEach((elem) => {
+    addClass(elem, "hidden");
   });
   addClass(companyBtn, "notactive");
   removeClass(individualBtn, "notactive");
