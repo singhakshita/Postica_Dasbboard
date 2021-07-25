@@ -60,9 +60,7 @@ body {
   padding: 16px;
   box-shadow: 2px 2px 2px 2px rgba(92, 89, 89, 0.76);
 }
-.saveImg {
-  margin-left: 40%;
-}
+
 .kyc__header {
   display: flex;
   align-items: center;
@@ -87,12 +85,12 @@ body {
 .photo__sugges {
   padding: 16px;
 }
-.photo__box {
+/* .photo__box {
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
-}
+} */
 @media (min-width: 40rem) {
   .photo__box {
     flex-direction: row;
