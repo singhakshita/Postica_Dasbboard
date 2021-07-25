@@ -14,8 +14,9 @@ const arrDropDown = [
   ".kyc__Pan--container",
   ".kyc__logo--container",
   ".kyc__gst--container",
-  ".photo---kyc",
-  ".doc--kyc",
+  ".individual--kyc",
+  ".image__individual",
+  ".aadhar__individual",
 ];
 const dropdownPhoto = document.querySelector(".dropDown1");
 const photoKyc = document.querySelector(".first-kyc");

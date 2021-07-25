@@ -105,15 +105,18 @@ body {
   height: 300px;
   border: 1px solid grey;
   margin: 16px;
-  padding-top: 130px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 .icon {
   position: relative;
   height: 100px;
   width: 100px;
   background: url(./assets/photo.png) no-repeat center/contain;
-  margin-left: calc(50% - 50px);
+  /* margin-left: calc(50% - 50px); */
 }
 .hidden {
   display: none;
